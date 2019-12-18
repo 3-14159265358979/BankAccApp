@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="487.0" prefWidth="489.0" style="-fx-background-color: #FF00FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ManagerController">
+   <children>
+      <TextField fx:id="txtF_user" layoutX="194.0" layoutY="169.0" prefHeight="31.0" prefWidth="236.0" style="-fx-background-color: FAED27;" />
+      <TextField fx:id="txtF_pass" layoutX="192.0" layoutY="239.0" prefHeight="31.0" prefWidth="236.0" style="-fx-background-color: FAED27;" />
+      <Text layoutX="59.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="61.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="147.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager Account">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_add" layoutX="61.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleAddButtonAction" style="-fx-background-color: #39FF14;" text="Add Customer" />
+      <Button fx:id="btn_logout" layoutX="360.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleLogoutButtonAction" style="-fx-background-color: #39FF14;" text="Logout" />
+      <Button fx:id="btn_rem" layoutX="199.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleRemoveButtonAction" style="-fx-background-color: #39FF14;" text="Remove Customer" />
+      <Text fx:id="txt_msg" layoutX="95.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="298.6708984375" />
+      <Text layoutX="95.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You only need to enter the username to delete a customer" textAlignment="CENTER" wrappingWidth="298.6708984375">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font></Text>
+   </children>
+</AnchorPane>
